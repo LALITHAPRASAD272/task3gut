@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palnati Lalitha Prasad | Cloud Engineer</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        header {
+            background: #020617;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            margin-left: 20px;
+            color: #e2e8f0;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        .hero {
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            color: #38bdf8;
+        }
+
+        .hero p {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #94a3b8;
+        }
+
+        /* Resume Buttons */
+        .button-group {
+            margin-top: 40px;
+        }
+
+        .btn {
+            margin: 10px;
+            padding: 10px 20px;
+            background: #38bdf8;
+            color: #020617;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+            transform: translateY(-3px);
+        }
+
+        /* Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #020617;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #1e293b;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        h3 {
+            margin-bottom: 15px;
+            color: #38bdf8;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        .contact-box {
+            margin-top: -20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .contact-item {
+            background: #020617;
+            border: 1px solid #1e293b;
+            padding: 12px 20px;
+            border-radius: 8px;
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        .contact-item i {
+            font-size: 18px;
+        }
+
+        .contact-item:hover {
+            background: #38bdf8;
+            color: #020617;
+            transform: translateY(-5px);
+        }
+        .profile-pic {
+         position: absolute;
+         top: 80px;
+         right: 10%;
+         width: 150px;
+         height: 150px;
+         border-radius: 50%;
+         border: 3px solid #38bdf8;
+         object-fit: cover;
+}
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>PLP</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Palnati Lalitha Prasad</h2>
+    <p>Aspiring Cloud Engineer | Azure | DevOps | Kubernetes</p>
+
+    <img src="https://${azurerm_storage_account.portfolio_sa.name}.blob.core.windows.net/${azurerm_storage_container.images.name}/${azurerm_storage_blob.profile_photo.name}"
+     class="profile-pic"
+     alt="Profile Photo">
+
+    <div class="button-group">
+        <a href="LalithaprasadPalnati2.pdf" download class="btn">Download Resume</a>
+        <a href="LalithaprasadPalnati2.pdf" target="_blank" class="btn">View Resume</a>
+    </div>
+</section>
+
+<section id="about">
+    <h3>About Me</h3>
+    <p>
+        Aspiring Cloud Engineer with hands-on experience in Azure, Terraform, and DevSecOps practices.
+        Passionate about building scalable, secure cloud solutions and continuously learning modern technologies.
+    </p>
+</section>
+
+<section id="skills">
+    <h3>Technical Skills</h3>
+    <div class="grid">
+        <div class="card"><h4>Cloud</h4><p>Azure, AWS</p></div>
+        <div class="card"><h4>DevOps</h4><p>Azure DevOps, CI/CD</p></div>
+        <div class="card"><h4>IaC</h4><p>Terraform</p></div>
+        <div class="card"><h4>Containers</h4><p>Docker, Kubernetes</p></div>
+        <div class="card"><h4>Monitoring</h4><p>Prometheus, Grafana</p></div>
+        <div class="card"><h4>Security</h4><p>Trivy, SonarQube</p></div>
+    </div>
+</section>
+
+<section id="projects">
+    <h3>Projects</h3>
+    <div class="grid">
+        <div class="card">
+            <h4>3-Tier Architecture</h4>
+            <p>Designed scalable architecture separating UI, application, and database layers.</p>
+        </div>
+
+        <div class="card">
+            <h4>Azure DevOps CI/CD</h4>
+            <p>Automated deployment using Terraform & Azure pipelines.</p>
+        </div>
+
+        <div class="card">
+            <h4>CloudShield DevSecOps</h4>
+            <p>End-to-end DevSecOps pipeline with AKS, Docker, monitoring.</p>
+        </div>
+    </div>
+</section>
+
+<section id="achievements">
+    <h3>Achievements</h3>
+    <ul>
+        <li>🏆 3rd Prize – CloudShield DevSecOps Hackathon 2026</li>
+        <li>🥈 2nd Prize – Engineering Day Technical Quiz</li>
+        <li>🎯 Fest Coordinator – College Events</li>
+    </ul>
+</section>
+
+<!-- Contact Section -->
+<div class="contact-box">
+    <a href="mailto:palnatilalithaprasad@gmail.com" class="contact-item">
+        <i class="fas fa-envelope"></i> Email
+    </a>
+
+    <a href="https://www.linkedin.com/in/lalitha-prasad-palnati-842bb1331" target="_blank" class="contact-item">
+        <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+
+    <a href="https://github.com/LALITHAPRASAD272" target="_blank" class="contact-item">
+        <i class="fab fa-github"></i> GitHub
+    </a>
+</div>
+
+<footer>
+    <p>© 2026 Palnati Lalitha Prasad | Cloud Portfolio</p>
+</footer>
+
+</body>
+</html>
